@@ -1,0 +1,25 @@
+@use "../General/colors" as *;
+
+.CardOneBgColor{
+   background-color:  $CardOneColor;
+    .CardBtnColorOne{
+        background-color: $CardOneBtnColor;
+    }
+}
+
+.CardTwoBgColor{
+    background-color: $CardTwoColor;
+    .CardTwoBtnColor{
+        background-color: $CardTwoBtnColor;
+    }
+}
+.RuthBgColor{
+    background-color: $RuthBgrColor;
+}
+
+.ForthBgColor{
+    background-color: $ForthBrgColor;
+    .ForthBtnColor{
+        background-color: $ForthBut;
+    }
+}

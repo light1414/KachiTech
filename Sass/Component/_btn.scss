@@ -1,0 +1,31 @@
+@use"../general/colors" as*;
+
+@mixin btn {
+    border: 2px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: $primaryColor;
+    color: $SecondaryColor;
+    padding: 0.55em;
+    width: 9vw;
+}
+
+.btnStyle{
+    @include btn;
+    &:hover{
+        background-color: black;
+    }
+    .textStyle{
+        color: $SecondaryColor;
+        text-decoration: none;
+        &:hover{
+        color: rgb(26, 12, 158); }
+    }
+}
+
+.btn_Style{
+    @extend .btnStyle;
+    .text_style{
+        @extend .text_style;
+    }
+}
